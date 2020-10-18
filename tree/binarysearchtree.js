@@ -130,7 +130,30 @@ class Node {
         }
       }
     }
+
+    // another implementation of remove
+    delete(value){
+      if(this.root === null){
+        return false;
+      }
+      let currentNode = this.root;
+      let parentNode = null;
+      while(currentNode){
+        if(value < currentNode.value){
+          parentNode = currentNode;
+          currentNode = currentNode.left;
+        } else if(value > currentNode.value){
+          parentNode = currentNode;
+          currentNode = currentNode.right;
+        } else if (currentNode.value === value) {
+          if(currentNode.left === null && currentNode.right === null){
+            currentNode = null;
+            
+          }
+        }
+    }
   }
+}
   
   const tree = new BinarySearchTree();
   tree.insert(9)
@@ -153,9 +176,5 @@ class Node {
     tree.right = node.right === null ? null : traverse(node.right);
     return tree;
   }
-  
-  
-  
-  
   
   
