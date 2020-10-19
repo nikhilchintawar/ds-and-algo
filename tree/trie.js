@@ -38,6 +38,7 @@ class Trie{
     }
 
     // TODO: implementation of delete a trie node.
+    // delete()
 }
 
 let trie = new Trie();
