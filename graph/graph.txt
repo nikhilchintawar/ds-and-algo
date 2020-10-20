@@ -1,0 +1,8 @@
+Types of graphs:
+directed and undirected
+weighted and unweighted
+cyclic and acyclic
+
+edge list
+adjacent list
+adjacent matrix
