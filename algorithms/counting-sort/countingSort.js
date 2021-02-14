@@ -37,3 +37,5 @@ function countingSort(array, minimumValue, maximumValue) {
 
 let array = [9,4,1,7,9,1,2,0]
 countingSort(array, 0, 9)
+
+console.log(arguments)

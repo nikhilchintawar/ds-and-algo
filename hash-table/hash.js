@@ -19,7 +19,7 @@ var HashTable = function() {
     if(!this.collection.hasOwnProperty(address)){
       this.collection[address] = {}
     }
-    this.collection[address][key] =value
+    this.collection[address][key] = value
   }
 
   this.remove = function(key){
