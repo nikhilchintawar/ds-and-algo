@@ -24,3 +24,12 @@ const debounce = (
   };
   return _debounce;
 };
+
+function debounce2(func, delay) {
+  let debounceTimer;
+  return function () {
+    const ctx = this;
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => func.apply(ctx, arguments), delay);
+  };
+}
